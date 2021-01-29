@@ -15,7 +15,7 @@ ds_path= "https://raw.githubusercontent.com/shat700/nd00333-capstone/master/hear
 ds.isna().sum()
 
 #define x and y
-def data(dataset):
+def ds(data):
     y=df.pop("DEATH_EVENT")
     x=df
     return x,y
