@@ -12,7 +12,7 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 ds_path= "https://raw.githubusercontent.com/shat700/nd00333-capstone/master/heart_failure_clinical_records_dataset.csv"
 
 #check for null values
-ds.isna().sum()
+#ds.isna().sum()
 
 #define x and y
 def ds(data):
