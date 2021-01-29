@@ -9,7 +9,7 @@ import pandas as pd
 from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
 
-ds_path= "https://raw.githubusercontent.com/shat700/nd00333-capstone/master/heart_failure_clinical_records_dataset.csv"
+ds_path= "https://raw.githubusercontent.com/shat700/nd00333-capstone/master/starter_file/heart_failure_clinical_records_dataset.csv"
 
 #check for null values
 #ds.isna().sum()
