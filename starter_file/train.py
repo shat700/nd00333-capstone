@@ -16,16 +16,18 @@ ds_path= "https://raw.githubusercontent.com/shat700/nd00333-capstone/master/star
 
 #define x and y
 def ds(df):
-    y=df.drop_columns("DEATH_EVENT")
-    x=df
-    return x,y
+    y=df.keep_columns(['DEATH_EVENT'])
+    X=df.drop_columns(['DEATH_EVENT'])
+    return X,y
 
 data= TabularDatasetFactory.from_delimited_files(path=ds_path)
-x,y=ds(data)
+X,y=ds(data)
 
 #Split data into train and test sets.
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33, random_state=42)
-run = Run.get_context(allow_offline=True)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+#run = Run.get_context(allow_offline=True)
+
+
 
 def main():
     # Add arguments to script
