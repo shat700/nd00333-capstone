@@ -25,7 +25,7 @@ X,y=ds(data)
 
 #Split data into train and test sets.
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
-#run = Run.get_context(allow_offline=True)
+run = Run.get_context(allow_offline=True)
 
 
 
