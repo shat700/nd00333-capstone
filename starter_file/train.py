@@ -11,17 +11,18 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 
 ds_path= "https://raw.githubusercontent.com/shat700/nd00333-capstone/master/starter_file/heart_failure_clinical_records_dataset.csv"
 
-#check for null values
-#ds.isna().sum()
 
 #define x and y
 def ds(df):
-    y=df.keep_columns(['DEATH_EVENT'])
-    X=df.drop_columns(['DEATH_EVENT'])
+    y=df.pop('DEATH_EVENT')
+    X=df
     return X,y
 
+
 data= TabularDatasetFactory.from_delimited_files(path=ds_path)
+data= data.to_pandas_dataframe()
 X,y=ds(data)
+
 
 #Split data into train and test sets.
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
@@ -41,9 +42,9 @@ def main():
     run.log("Regularization Strength:", np.float(args.C))
     run.log("Max iterations:", np.int(args.max_iter))
 
-    model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
+    model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(X_train, y_train)
 
-    accuracy = model.score(x_test, y_test)
+    accuracy = model.score(X_test, y_test)
     run.log("Accuracy", np.float(accuracy))
 
     os.makedirs("outputs",exist_ok=True)
