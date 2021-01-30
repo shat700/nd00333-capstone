@@ -15,12 +15,13 @@ ds_path= "https://raw.githubusercontent.com/shat700/nd00333-capstone/master/star
 #ds.isna().sum()
 
 #define x and y
-def ds(data):
-    y=df.pop("DEATH_EVENT")
+def ds(df):
+    y=df.drop_columns("DEATH_EVENT")
     x=df
     return x,y
 
-ds= TabularDatasetFactory.from_delimited_files(path=ds_path)
+data= TabularDatasetFactory.from_delimited_files(path=ds_path)
+x,y=ds(data)
 
 #Split data into train and test sets.
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33, random_state=42)
