@@ -2,6 +2,8 @@ import json
 import numpy as np
 import os
 import pickle
+import traceback
+import pandas as pd
 
 def init():
     global model
@@ -11,7 +13,9 @@ def init():
 
 def run(data):
     try:
-        data = np.array(json.loads(data))
+        data = json.loads(data)
+        data = data["data"]
+        data = pd.DataFrame(data)
         result = model.predict(data)
         # You can return any data type, as long as it is JSON serializable.
         #return result.tolist()
@@ -19,5 +23,6 @@ def run(data):
         
     except Exception as e:
         error = str(e)
+        print(traceback.format_exc())
         return json.dumps({"error":error})
         
