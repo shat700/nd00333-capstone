@@ -1,6 +1,6 @@
 # Heart Failure Prediction
 
-*TODO:* Write a short introduction to your project.
+## Introduction
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
@@ -42,6 +42,6 @@
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
-## Standout Suggestions
+## Future Improvements
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
 
