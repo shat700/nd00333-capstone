@@ -1,8 +1,8 @@
 # Heart Failure Prediction
 
 ## Introduction
-Heart diseases are one of the most prominent causes of death these days. This is beacuse of habits such as smoking, junk eating, regular alcohol consumption and overall an unhealthy lifestyle. Some people can also be more prone to developing symptoms of a heart disease because of their genetics. Therefore, awareness is imperative in such cases. 
-A machine learning model can play an important role in this case by predicting based on the 12 important factors whether death is imminent or not. This can be extremely helpful as it can make people understand how they need to modify their lifestyle to avoid the worst case scenario.
+Heart diseases are one of the most prominent causes of death these days. This is because of habits such as smoking, junk eating, regular alcohol consumption and overall an unhealthy lifestyle. Some people can also be more prone to developing symptoms of a heart disease because of their genetics. Therefore, awareness is imperative in such cases. 
+A machine learning model can play an important role in this case by predicting based on the different important factors whether death is imminent or not. This can be extremely helpful as it can make people understand how they need to modify their lifestyle to avoid the worst case scenario.
 
 ## Project Set Up and Installation
 In order to work on this project, I first opened AzureML Studio and opened the notebook section to start working on the automl run, hyperdrive run, scoring script to be used in deployment of best model and train script to be used for training of the hyperdrive model. A compute cluster was set up to run the notebooks in AzureML. A CPU compute with vm_size="Standard_D3_V2" and max_nodes=4 was selected for this project.
@@ -80,6 +80,7 @@ The result was cross-verified with the dataset.
 
 ## Screen Recording
 
+* https://youtu.be/K6mHger07DM
 
 ## References
 
