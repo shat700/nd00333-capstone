@@ -81,8 +81,10 @@ The result was cross-verified with the dataset.
 
 
 ## References
-*Deploy machine learning models to Azure: https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=azcli
-*Consume an Azure Machine Learning model deployed as a web service: https://docs.microsoft.com/en-us/azure/machine-learning/how-to-consume-web-service?tabs=python
+
+* Deploy machine learning models to Azure: https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=azcli
+
+* Consume an Azure Machine Learning model deployed as a web service: https://docs.microsoft.com/en-us/azure/machine-learning/how-to-consume-web-service?tabs=python
 
 
 
