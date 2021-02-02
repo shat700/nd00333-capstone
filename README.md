@@ -30,7 +30,9 @@ The best model obtained from the automl run was 'VotingEnsemble' with the highes
 [rundetailsautoml1](rundetailsautoml1.png)
 
 #### Best AutoML Model 
-[bestautomlrun1](https://github.com/shat700/nd00333-capstone/blob/master/starter_file/bestautomlrun1.png)
+
+
+![bestautomlrun1](https://github.com/shat700/nd00333-capstone/blob/master/starter_file/bestautomlrun1.png)
 
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
