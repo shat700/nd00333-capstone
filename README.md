@@ -31,6 +31,12 @@ The best model obtained from the automl run was 'VotingEnsemble' with the highes
 
 ![rundetailsautoml1](https://github.com/shat700/nd00333-capstone/blob/master/starter_file/rundetailsautoml1.png)
 
+#### AutoML Run
+
+
+![automlpipeline](https://github.com/shat700/nd00333-capstone/blob/master/starter_file/automlpipeline.png)
+
+
 #### Best AutoML Model 
 
 
