@@ -28,11 +28,11 @@ The best model obtained from the automl run was 'VotingEnsemble' with the highes
 
 ####RunDetails
 
-![rundetails_automl](rundetails_automl.png)
+![rundetailsautoml](rundetailsautoml.png)
 
 ####Best AutoML Model 
 
-![best_automl_run](best_automl_run.png)
+![bestautomlrun](bestautomlrun.png)
 
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
