@@ -26,10 +26,10 @@ The automl settings are part of the AutoMLConfig class which is the configuratio
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 The best model obtained from the automl run was 'VotingEnsemble' with the highest accuracy of '0.87966'. However, by increasing the experiment timeout duration to 30 minutes and decreasing the maximum number of concurrent iterations, the score might improve but not substantially.
 
-####RunDetails
+#### RunDetails
 ![rundetailsautoml](rundetailsautoml.png)
 
-####Best AutoML Model 
+#### Best AutoML Model 
 ![bestautomlrun](bestautomlrun.png)
 
 
