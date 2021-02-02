@@ -27,7 +27,9 @@ The automl settings are part of the AutoMLConfig class which is the configuratio
 The best model obtained from the automl run was 'VotingEnsemble' with the highest accuracy of '0.87966'. However, by increasing the experiment timeout duration to 30 minutes and decreasing the maximum number of concurrent iterations, the score might improve but not substantially.
 
 #### RunDetails
-[rundetailsautoml1](rundetailsautoml1.png)
+
+
+![rundetailsautoml1](https://github.com/shat700/nd00333-capstone/blob/master/starter_file/rundetailsautoml1.png)
 
 #### Best AutoML Model 
 
