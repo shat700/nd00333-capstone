@@ -62,7 +62,8 @@ The best model obtained from the hyperdrive run was with the accuracy of '0.7575
 
 ## Model Deployment
 Since the 'accuracy' was found to be the highest in case of automl run, the model was saved as a pickle file and registered in AzureML directory. Next, an inference configuration was setup that used scoring.py to make predictions on the test data. The model was deployed as an ACI (Azure Container Instance) webservice with enabled application insights and authentication. 
-Followed by deployment, the scoring_uri and primary key were retrieved for the deployed webservice to be tested after sending a request. The input was in the form of a 2-d array obtained from pandas dataframe inside a dictionary (json.loads). The output obtained after sending the request was obtained as "{\"result\": [1, 1]}" which implies that death occured in both the cases of input data. 
+Followed by deployment, the scoring_uri and primary key were retrieved for the deployed webservice to be tested after sending a request. The input was in the form of a 2-d array obtained from pandas dataframe inside a dictionary (json.loads). The output obtained after sending the request was obtained as 
+"{\"result\": [1, 1]}" which implies that death occured in both the cases of input data. 
 The result was cross-verified with the dataset. 
 
 #### Scoring uri and primary key of the deployed webservice
