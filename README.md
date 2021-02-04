@@ -10,7 +10,7 @@ In order to work on this project, I first opened AzureML Studio and opened the n
 ## Dataset
 
 ### Overview
-The dataset consists of 12 different factors that directly or indirectly are responsible for cardiovascular diseases. It was obtained from kaggle as an open dataset and imported in the form of a URL for this project, converted to pandas dataframe. An autoML and a hyperdrive run were performed to get the best model based on the primary metric 'accuracy'. The best model obtained was 'VotingEnsemble' from the autoML run with the accuracy of '0.87966' as compared to that of '0.75757' obtained from the hyperdrive run.
+The dataset consists of 12 different factors that directly or indirectly are responsible for cardiovascular diseases. It was obtained from kaggle as an open dataset and imported in the form of a URL for this project, converted to pandas dataframe. An autoML and a hyperdrive run were performed to get the best model based on the primary metric 'accuracy'. The best model obtained was 'VotingEnsemble' from the autoML run with the accuracy of '0.88299' as compared to that of '0.75757' obtained from the hyperdrive run.
 
 ### Task
 The aim of the project is to develop a model that takes the input data and predicts on the target column:'DEATH_EVENT' and determine the output in binary. Where '0' means death will not happen and '1' means death will happen. In order to develop this model, I first prepared the training script and the 2 notebooks for automl run and hyperdrive run. The scoring script was prepared later for model deployment stage.
@@ -23,7 +23,7 @@ The task for autoML is set as 'classification' to be performed on the dataset. T
 The automl settings are part of the AutoMLConfig class which is the configuration of the autoML experiment to be run in AzureML.
 
 ### Results
-The best model obtained from the automl run was 'VotingEnsemble' with the highest accuracy of '0.87966'. However, by increasing the experiment timeout duration to 30 minutes and decreasing the maximum number of concurrent iterations, the score might improve but not substantially.
+The best model obtained from the automl run was 'VotingEnsemble' with the highest accuracy of '0.88299'. However, by increasing the experiment timeout duration to 30 minutes and decreasing the maximum number of concurrent iterations, the score might improve but not substantially.
 
 #### RunDetails
 
